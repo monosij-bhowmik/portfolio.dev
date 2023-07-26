@@ -7,9 +7,9 @@
   position: absolute;
   width: 100%;
   left: 15%;
-  top: 100px;
+  top: 200px;
 }
-/* DEMO-SPECIFIC STYLES */
+/* Typewriter effect just use the 'typewriter' class in the component */
 .typewriter {
   color: #000;
   font-family: monospace;
@@ -20,7 +20,6 @@
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
-
 /* The typing effect */
 @keyframes typing {
   from {
@@ -30,7 +29,6 @@
     width: 80%;
   }
 }
-
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from,
@@ -40,4 +38,26 @@
   50% {
     border-color: #660708;
   }
+}
+.highlights-container-overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+.highlights-container {
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+.highlights-containe:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.highlights-container-overlay:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
 }
