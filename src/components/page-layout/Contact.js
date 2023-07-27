@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react";
+import ContactForm from "./ContactForm";
 
 export default function Contact() {
   return (
     <>
-    <div style={{textAlign: 'center'}}>Banner Component</div>
-    
+      <div style={{ textAlign: "center" }}>Banner Component</div>
+      <ContactForm />
     </>
-  )
+  );
 }

@@ -1,10 +1,10 @@
 import React from "react";
 import imageUrl from "../../images/Banner3.svg";
-import imageUrl2 from "../../images/Banner4.svg";
 import Highlights from "../Highlights";
 
 import ParallaxImageBanner from "../ParallaxImageBanner";
 import TimelineComponet from "../Timeline";
+import ContactForm from "./ContactForm";
 
 // ToDo:
 // 1. Create a timeline compponent and use it on the homepage
@@ -49,11 +49,6 @@ const timeline = [
     description:
       "Developed personalized marketing emails and interactive landing pages, leading the creative front, using HTML, CSS, JavaScript, Bootstrap, and SSJS. Managed end-to-end user journeys with Email Studio, Automation Studio, Contact Builder, and Journey Builder.<br ><br > Streamlined development by creating a content block repository with Bootstrap and a custom library, reducing development and QA effort by 40%. Proposed a more efficient approach for user journeys, resulting in a 20% reduction in platform resource usage.<br ><br > Introduced progressive web forms and micro-interactions on static cloud pages to enhance the user experience and generate a larger number of healthy leads.<br ><br > Ensured smooth data flow between SFDC and SFMC through integration, leveraging Automation Studio and SQL queries. Collaborated with marketing managers and stakeholders to implement complex business logic using different SFMC studios and improved documentation for developers.",
   },
-  {
-    year: "Jun 2019",
-    duration: "Graduated !!",
-    area: "Durgapur, West Bengal",
-  },
 ];
 
 function Homepage() {
@@ -62,6 +57,7 @@ function Homepage() {
       <ParallaxImageBanner imageUrl={imageUrl} bannerData={homepageBanner} />
       <Highlights heading={highlights} cardContents={cardContents} />
       <TimelineComponet timelineData={timeline} />
+      <ContactForm formType="footer" />
     </>
   );
 }

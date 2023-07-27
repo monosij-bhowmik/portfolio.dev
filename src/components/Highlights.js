@@ -3,7 +3,7 @@ import { Box, Container, Stack, Typography } from "@mui/material";
 
 export default function Highlights({ heading, cardContents }) {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ pb: 4 }}>
       <Typography
         gutterBottom
         variant="h4"
