@@ -6,7 +6,6 @@ export default function Contact() {
   return (
     <>
       <Container fixed>
-        sfghisrigorhgi
         <ContactForm />
       </Container>
     </>

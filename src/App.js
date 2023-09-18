@@ -16,6 +16,7 @@ function App() {
       background: {
         default: "#001220",
       },
+      mode: "dark",
       primary: {
         main: "#f5f3f4",
       },
@@ -31,15 +32,13 @@ function App() {
     <ThemeProvider theme={appTheme}>
       <CssBaseline />
       <ResponsiveAppBar />
-      <BrowserRouter basename="/portfolio.dev">
-        <Routes>
-          <Route exact path="/portfolio.dev" element={<Homepage />} />
-          {/* <Route path="/about" element={<About />} /> */}
-          <Route path="/dev-portfolio" element={<DevPortfolio />} />
-          <Route path="/travel-blog" element={<TravelBlog />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Homepage />} />
+        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/dev-portfolio" element={<DevPortfolio />} />
+        <Route path="/travel-blog" element={<TravelBlog />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
     </ThemeProvider>
   );

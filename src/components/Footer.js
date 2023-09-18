@@ -7,7 +7,11 @@ import ContactForm from "./page-layout/ContactForm";
 
 export default function Footer() {
   return (
-    <AppBar color="secondary" position="sticky" sx={{ top: "auto", bottom: 0 }}>
+    <AppBar
+      position="sticky"
+      style={{ background: "#e85d04" }}
+      sx={{ top: "auto", bottom: 0 }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box display="flex" flexGrow={1}>

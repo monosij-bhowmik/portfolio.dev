@@ -60,7 +60,7 @@ const ContactForm = ({ formtype }) => {
           <Grid item lg={6} justifyContent="center" sx={{ p: 2 }}>
             <form onSubmit={formik.handleSubmit}>
               <Grid container direction="row" sx={{ pb: 2 }} spacing={2}>
-                <Grid item lg={6}>
+                <Grid item lg={6} xs={12} md={12} sm={12}>
                   <TextField
                     id="firstName"
                     name="firstName"
@@ -97,7 +97,7 @@ const ContactForm = ({ formtype }) => {
                     }}
                   />
                 </Grid>
-                <Grid item lg={6}>
+                <Grid item lg={6} xs={12} md={12} sm={12}>
                   <TextField
                     id="lastName"
                     name="lastName"
@@ -169,6 +169,7 @@ const ContactForm = ({ formtype }) => {
               <Grid item xs={12} sx={{ pb: 2 }}>
                 <TextField
                   fullWidth
+                  multiline
                   id="message"
                   name="message"
                   label="Message"
@@ -203,14 +204,20 @@ const ContactForm = ({ formtype }) => {
               </Grid>
               <Button
                 variant="contained"
-                color="secondary"
+                style={{ background: "rgb(232, 93, 4)" }}
                 endIcon={<SendIcon />}
               >
                 Send
               </Button>
             </form>
           </Grid>
-          <Grid container xs={6}>
+          <Grid
+            direction={"column"}
+            justifyItems={"center"}
+            alignContent={"center"}
+            container
+            xs={6}
+          >
             <Grid item lg={12} justifyContent="center" sx={{ p: 2, pt: 10 }}>
               <CircularImage imgURL={image} height="250px" width="250px" />
             </Grid>

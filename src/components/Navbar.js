@@ -28,13 +28,10 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar
-      color="secondary"
       position="sticky"
       sc={{ buttom: "auto", top: "0" }}
       component="nav"
-      // sx={{
-      //   opacity: "50%",
-      // }}
+      style={{ background: "#e85d04" }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>

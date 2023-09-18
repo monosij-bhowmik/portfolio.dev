@@ -16,7 +16,7 @@ export default function Highlights({ cardContents }) {
       </Typography>
       <Stack
         direction={{ xs: "column", sm: "row" }}
-        spacing={{ xs: 1, sm: 2, md: 4 }}
+        spacing={{ xs: 4, sm: 4, md: 4 }}
         justifyContent="space-evenly"
         alignContent="center"
       >

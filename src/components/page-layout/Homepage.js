@@ -13,7 +13,7 @@ import ContactForm from "./ContactForm";
 
 const homepageBanner = {
   label: "Hi I'm Monosij !",
-  description: "An aspiring full-stack dev, writing code for a living.",
+  description: "Full stack javascript developer/ Email Marketing Consultant",
 };
 const cardContents = [
   {
