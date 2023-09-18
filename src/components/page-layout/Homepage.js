@@ -15,12 +15,19 @@ const homepageBanner = {
   label: "Hi I'm Monosij !",
   description: "An aspiring full-stack dev, writing code for a living.",
 };
-const highlights = "Current Projects";
-const cardContents = {
-  cardHeader: "Lorem ipsum dolor sit amet",
-  cardContents:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-};
+const cardContents = [
+  {
+    cardHeader: "Portfolio website builder (MERN stack)",
+    cardContents:
+      "Building a MERN application which makes it easy for anyone with no coding experience build a portfolio website",
+  },
+  {
+    cardHeader: "Marketing Email Builder (MERN Stack)",
+    cardContents:
+      "Building a platform which enables digital marketers to build customised HTML emails without any technical knowledge",
+  },
+];
+
 const timeline = [
   {
     year: "Oct 2022 - Present",
@@ -55,9 +62,9 @@ function Homepage() {
   return (
     <>
       <ParallaxImageBanner imageUrl={imageUrl} bannerData={homepageBanner} />
-      <Highlights heading={highlights} cardContents={cardContents} />
+      <Highlights cardContents={cardContents} />
       <TimelineComponet timelineData={timeline} />
-      <ContactForm formType="footer" />
+      <ContactForm formType="footer" sx={{ pb: 4 }} />
     </>
   );
 }

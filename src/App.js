@@ -33,10 +33,10 @@ function App() {
       <ResponsiveAppBar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="about" element={<About />} />
-        <Route path="dev-portfolio" element={<DevPortfolio />} />
-        <Route path="travel-blog" element={<TravelBlog />} />
-        <Route path="contact" element={<Contact />} />
+        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/dev-portfolio" element={<DevPortfolio />} />
+        <Route path="/travel-blog" element={<TravelBlog />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </ThemeProvider>

@@ -1,11 +1,14 @@
 import React from "react";
 import ContactForm from "./ContactForm";
+import { Container, Grid } from "@mui/material";
 
 export default function Contact() {
   return (
     <>
-      <div style={{ textAlign: "center" }}>Banner Component</div>
-      <ContactForm />
+      <Container fixed>
+        sfghisrigorhgi
+        <ContactForm />
+      </Container>
     </>
   );
 }

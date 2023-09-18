@@ -2,7 +2,7 @@ import { Container, Grid } from "@mui/material";
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
-import image from "../../images/Banner3.svg";
+import image from "../../images/snapshot-backround-removed.png";
 import SendIcon from "@mui/icons-material/Send";
 import { TextField, Button, Box, Typography } from "@mui/material";
 import CircularImage from "../CircularImage";
@@ -35,7 +35,7 @@ const ContactForm = ({ formtype }) => {
   });
 
   return (
-    <Container maxWidth={"lg"}>
+    <Container maxWidth={"lg"} gutterBottom>
       <Box sx={{ flexGrow: 1 }} maxWidth="lg">
         <Grid
           container
@@ -52,8 +52,9 @@ const ContactForm = ({ formtype }) => {
               color="primary"
               variant="h4"
               component="div"
+              sx={{ pt: 4 }}
             >
-              Contact Me
+              Feel free to drop a Hi!
             </Typography>
           </Grid>
           <Grid item lg={6} justifyContent="center" sx={{ p: 2 }}>
@@ -210,7 +211,9 @@ const ContactForm = ({ formtype }) => {
             </form>
           </Grid>
           <Grid container xs={6}>
-            <CircularImage imgURL={image} height="250px" width="250px" />
+            <Grid item lg={12} justifyContent="center" sx={{ p: 2, pt: 10 }}>
+              <CircularImage imgURL={image} height="250px" width="250px" />
+            </Grid>
           </Grid>
         </Grid>
       </Box>

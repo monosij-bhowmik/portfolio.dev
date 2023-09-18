@@ -14,7 +14,7 @@ import SocialMediaLinks from "./SocialMediaLinks";
 import logo from "../app-logo.png";
 import "../App.css";
 
-const pages = ["about", "dev-portfolio", "travel-blog", "contact"];
+const pages = ["dev-portfolio", "travel-blog", "contact"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -29,17 +29,30 @@ function ResponsiveAppBar() {
   return (
     <AppBar
       color="secondary"
-      position="fixed"
+      position="sticky"
       sc={{ buttom: "auto", top: "0" }}
+      component="nav"
+      // sx={{
+      //   opacity: "50%",
+      // }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
-          <img
-            src={logo}
-            className="app-desktop-logo"
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-          />
+          <Link
+            style={{
+              textTransform: "none",
+              color: "#f5f3f4",
+              textDecoration: "none",
+            }}
+            to={`/`}
+          >
+            <img
+              src={logo}
+              className="app-desktop-logo"
+              sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+            />
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -51,6 +64,7 @@ function ResponsiveAppBar() {
             >
               <MenuIcon />
             </IconButton>
+
             <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
