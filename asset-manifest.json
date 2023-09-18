@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio.dev/static/css/main.683f4125.css",
-    "main.js": "/portfolio.dev/static/js/main.0453649f.js",
+    "main.css": "/portfolio.dev/static/css/main.90074d5b.css",
+    "main.js": "/portfolio.dev/static/js/main.fb8795e5.js",
     "static/js/787.a3bfe649.chunk.js": "/portfolio.dev/static/js/787.a3bfe649.chunk.js",
+    "static/media/ales-krivec-4miBe6zg5r0-unsplash.jpg": "/portfolio.dev/static/media/ales-krivec-4miBe6zg5r0-unsplash.fea6ccd8f898ae51d306.jpg",
+    "static/media/tim-mossholder-WB7J5clrcPc-unsplash.jpg": "/portfolio.dev/static/media/tim-mossholder-WB7J5clrcPc-unsplash.d7197d19a81f55e619e1.jpg",
+    "static/media/claudio-testa--SO3JtE3gZo-unsplash.jpg": "/portfolio.dev/static/media/claudio-testa--SO3JtE3gZo-unsplash.f4872e1ed6d62bb66615.jpg",
     "static/media/snapshot-backround-removed.png": "/portfolio.dev/static/media/snapshot-backround-removed.abbc1dc06ba62ef9eafa.png",
     "static/media/app-logo.png": "/portfolio.dev/static/media/app-logo.0264cb18b9a50acd7d94.png",
     "static/media/Banner3.svg": "/portfolio.dev/static/media/Banner3.80c94ddf804272dbbca8c76b9885e7ad.svg",
     "index.html": "/portfolio.dev/index.html",
-    "main.683f4125.css.map": "/portfolio.dev/static/css/main.683f4125.css.map",
-    "main.0453649f.js.map": "/portfolio.dev/static/js/main.0453649f.js.map",
+    "main.90074d5b.css.map": "/portfolio.dev/static/css/main.90074d5b.css.map",
+    "main.fb8795e5.js.map": "/portfolio.dev/static/js/main.fb8795e5.js.map",
     "787.a3bfe649.chunk.js.map": "/portfolio.dev/static/js/787.a3bfe649.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.683f4125.css",
-    "static/js/main.0453649f.js"
+    "static/css/main.90074d5b.css",
+    "static/js/main.fb8795e5.js"
   ]
 }
