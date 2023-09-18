@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Homepage from "./components/page-layout/Homepage";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
@@ -31,13 +31,15 @@ function App() {
     <ThemeProvider theme={appTheme}>
       <CssBaseline />
       <ResponsiveAppBar />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        {/* <Route path="/about" element={<About />} /> */}
-        <Route path="/dev-portfolio" element={<DevPortfolio />} />
-        <Route path="/travel-blog" element={<TravelBlog />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <BrowserRouter basename="/portfolio.dev">
+        <Routes>
+          <Route exact path="/portfolio.dev" element={<Homepage />} />
+          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/dev-portfolio" element={<DevPortfolio />} />
+          <Route path="/travel-blog" element={<TravelBlog />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
       <Footer />
     </ThemeProvider>
   );
