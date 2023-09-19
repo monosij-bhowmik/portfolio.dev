@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Stack, Typography } from "@mui/material";
 
-export default function Highlights({ cardContents }) {
+export default function Highlights({ sectionHeading, cardContents }) {
   return (
     <Container maxWidth="lg" sx={{ pb: 4 }}>
       <Typography
@@ -12,7 +12,7 @@ export default function Highlights({ cardContents }) {
         textAlign="center"
         paddingY="20px"
       >
-        Current Projects
+        {sectionHeading}
       </Typography>
       <Stack
         direction={{ xs: "column", sm: "row" }}

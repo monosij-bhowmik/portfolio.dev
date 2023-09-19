@@ -6,16 +6,13 @@ import { Box, Grid } from "@mui/material";
 export default function TravelBlog() {
   return (
     <>
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        maxWidth={"lg"}
-      >
+      <Box m={"auto"} maxWidth={"lg"} sx={{ pb: 4 }}>
         <Carousel />
       </Box>
-
-      <Posts />
+      //Add a 50 - 50 text image block
+      <Box m={"auto"} maxWidth={"lg"} sx={{ pb: 4, px: 4 }}>
+        <Posts />
+      </Box>
     </>
   );
 }

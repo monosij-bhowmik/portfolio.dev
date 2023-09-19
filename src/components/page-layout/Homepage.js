@@ -27,7 +27,7 @@ const cardContents = [
       "Building a platform which enables digital marketers to build customised HTML emails without any technical knowledge",
   },
 ];
-
+const highlightsHeader = "On going projects";
 const timeline = [
   {
     year: "Oct 2022 - Present",
@@ -62,7 +62,10 @@ function Homepage() {
   return (
     <>
       <ParallaxImageBanner imageUrl={imageUrl} bannerData={homepageBanner} />
-      <Highlights cardContents={cardContents} />
+      <Highlights
+        sectionHeading={highlightsHeader}
+        cardContents={cardContents}
+      />
       <TimelineComponet timelineData={timeline} />
       <ContactForm formType="footer" sx={{ pb: 4 }} />
     </>
