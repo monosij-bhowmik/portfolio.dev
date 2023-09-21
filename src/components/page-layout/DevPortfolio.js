@@ -21,6 +21,7 @@ export default function DevPortfolio() {
         sectionHeading={highlightsHeader}
         cardContents={cardContents}
       />
+      {/* Create and add a CRUD task manager */}
     </>
   );
 }

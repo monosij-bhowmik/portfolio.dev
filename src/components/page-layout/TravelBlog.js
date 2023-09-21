@@ -9,7 +9,7 @@ export default function TravelBlog() {
       <Box m={"auto"} maxWidth={"lg"} sx={{ pb: 4 }}>
         <Carousel />
       </Box>
-      //Add a 50 - 50 text image block
+      {/* //Add a 50 - 50 text image block */}
       <Box m={"auto"} maxWidth={"lg"} sx={{ pb: 4, px: 4 }}>
         <Posts />
       </Box>
